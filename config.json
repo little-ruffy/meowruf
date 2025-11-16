@@ -1,0 +1,23 @@
+{
+    "task_name": "classification",
+    "ckpt_path": "",
+    "c_in": 1,
+    "patch_len": 32,
+    "d_model": 512,
+    "d_ff": 2048,
+    "e_layers": 16,
+    "n_heads": 12,
+    "dropout": 0.5,
+    "output_attention": true,
+    "factor": 3,
+    "activation": "gelu",
+    "batch_size": 30,
+    "epoch": 20,
+    "num_workers": 4,
+    "data_path": "./dataset/exo/train_weather.csv",
+    "data_path_test": "./dataset/exo/test_weather.csv",
+    "data_path_validation": "./dataset/exo/val_weather.csv",
+    "save_ckpt_path": "output_weight/exo",
+    "window_size": 32,
+    "scaler_path": "output_weight/exo/scaler_weight/scaler.pkl"
+}
